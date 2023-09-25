@@ -36,6 +36,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
 
+# Overlays
+PRODUCT_PACKAGES += \
+   WifiOverlayVayu \
+   ApertureOverlayVayu
+
 # WiFi
 PRODUCT_PACKAGES += \
     VayuWifiOverlay
